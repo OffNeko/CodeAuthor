@@ -1,0 +1,10 @@
+name: CodeAuthor
+version: 1.0
+main: ru.offneko.codeauthor.CodeAuthor
+api-version: '1.20'
+authors: [OffNeko]
+softdepend: [Vault, PlayerPoints]
+commands:
+  codeauthor:
+    description: Управление плагином CodeAuthor
+    permission: codeauthor.admin

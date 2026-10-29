@@ -1,0 +1,58 @@
+#    ___          _         _   _                    _
+#   / __\___   __| | ___   /_\ | |__   ___  _   _ _ __| |_ ___ _ __
+#  / /  / _ \ / _` |/ _ \ //_\\| '_ \ / _ \| | | | '__| __/ _ \ '__|
+# / /__| (_) | (_| |  __//  _  \ | | | (_) | |_| | |  | ||  __/ |
+# \____/\___/ \__,_|\___/\/ \_/|_| |_|\___/ \__,_|_|   \__\___|_|
+#
+#            Author: OffNeko, Version: 1.0
+# Если нашли баг то напишите мне в тг @CatPotato2, дс OffNeko
+# ============================================================
+
+console-startup:
+  enabled: true
+  message:
+    - "&e=========================================="
+    - "&6&lCodeAuthor &eвключен!"
+    - "&eВерсия: &f%version%"
+    - "&eАвтор: &f%author%"
+    - "&eПоддержка: тг- @CatPotato2, дс - offneko"
+    - "&e=========================================="
+
+# В кавычках - коды, в name - ники авторов
+authors:
+  "TEST123":
+    name: "TestAuthor"
+  "HALLOWEEN":
+    name: "Spooky"
+
+payouts:
+  - command: "eco give"
+    percent: 15
+    type: "vault"
+    display: "&6Монетки"
+
+  - command: "points give"
+    percent: 15
+    type: "playerpoints"
+    display: "&bПоинты"
+
+# Команда /author donate
+donate-command:
+  enabled: true
+  permission: "codeauthor.donate"
+  header: "&e=== История донатов по вашему коду &6%code% &e==="
+  format: "&7- &6%player% &eкупил &b%command% &e(%amount% шт.) [&a%percent%%&e]"
+  empty: "<red>Пока никто не донатил с вашим кодом."
+
+# Главные сообщения
+messages:
+  invalid-code: "<red>Неверный код автора."
+  author-activated: "<green>Вы активировали автора: <yellow>%author%"
+  author-removed: "<red>Вы больше не поддерживаете автора: <yellow>%author%"
+  not-supporting: "<red>Вы не поддерживаете ни одного автора."
+  usage-author: "<red>Использование: /author <код>"
+  usage-see: "<red>Использование: /author see <код>"
+  code-not-found: "<red>Код %code% не найден в конфиге."
+  no-permission: "<red>У вас нет прав на эту команду."
+  not-registered-author: "<red>Вы не зарегистрированы как автор в конфиге."
+  reload-success: "<green>Плагин CodeAuthor успешно перезагружен!"

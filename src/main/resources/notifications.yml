@@ -1,0 +1,28 @@
+# Команда /author see (код автора)
+see-command:
+  enabled: true
+  permission: "codeauthor.see"
+  format: "&7[&e⚡&7] &fКод &6&n{code}&f поддерживают: &a{count} игроков &7- &eАвтор: &6{author}"
+
+# Уведомление автору когда кто то купил товар и
+# автору достались проценты от покупки (когда он в сети)
+notify:
+  sound:
+    enabled: true
+    name: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 1.0
+    pitch: 1.2
+  message: "&7[&e⚡&7] &a+{percent}% &e({amount} шт) &fот игрока &6{player} &e(покупка: &b{command}&e)"
+
+# Уведомление автору когда кто то купил товар и
+# автору достались проценты от покупки (когда он НЕ в сети)
+notify-afk:
+  enabled: true
+  messages:
+    - ""
+    - "&c╔"
+    - "&c╠ &#ef3447С возвращением, &f&n%player_name%&e 👋"
+    - "&c╠ &eЗа день ваш код &6%code% &eсобрал:"
+    - "&c╠  %rewards%"
+    - "&c╚"
+    - ""
